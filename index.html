@@ -92,7 +92,7 @@
             width: 100%;
             font-size: 16px;
         }
-
+        → 
         button {
             background-color: #16a34a;
             color: white;
@@ -136,7 +136,7 @@
             <div class="dica">
                 <strong>Petrobras (PETR4)</strong><br>
                 Uma das maiores empresas de energia do mundo.
-            </div>
+            </div> → 
             <div class="dica">
                 <strong>Vale (VALE3)</strong><br>
                 Maior produtora de minério de ferro do mundo.
@@ -146,13 +146,13 @@
         <div id="segundo">
             <h5>📊 O que são ações?</h5>
             <p>Ações são pequenas partes de uma empresa...</p>
-
+            → 
             <div class="calculadora">
                 <h3>🧮 Calculadora de Investimento</h3>
                 <input type="number" id="valorInvestimento" placeholder="Valor em R$">
                 <select id="acaoSelecionada">
-                    <option value="petr4">🛢️ PETR4 - R$ 38,50</option>
-                    <option value="vale3">⛏️ VALE3 - R$ 62,80</option>
+                    <option value="petr4">🛢️ PETR4 - R$ 47,52</option>
+                    <option value="vale3">⛏️ VALE3 - R$84,39</option>
                 </select>
                 <button onclick="calcularAcoes()">Calcular</button>
                 <div id="resultado" class="resultado"></div>
@@ -161,8 +161,10 @@
 
         <div id="terceiro">
             <h3>📊 Cotações</h3>
-            <div class="acao" onclick="alert('PETR4: R$ 38,50')">
-                🛢️ PETR4 → R$ 38,50
+            <div class="acao" onclick="alert('PETR4: R$ 47,52')">
+                🛢️ PETR4 → R$ 47,52
+                <div class="açao"onclick="alert('VALE3: R$ 84,39')">
+                    ⛏️ VALE3 → R$ 84,39
             </div>
         </div>
     </section>
@@ -173,8 +175,8 @@
 
     <script>
         const acoes = {
-            petr4: { preco: 38.50 },
-            vale3: { preco: 62.80 }
+            petr4: { preco: 47.52 },
+            vale3: { preco:84.39 }
         };
 
         function calcularAcoes() {
